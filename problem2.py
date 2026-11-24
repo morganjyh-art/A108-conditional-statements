@@ -10,7 +10,7 @@
 # Outputs:
 # "the number is an integer"
 # "the number is not an integer"
-text = input("Enter a number: ")
+text = input("Enter a numbe=: ")
 try:
     int(text)
     print("It is an integer value")
