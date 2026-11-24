@@ -29,3 +29,20 @@ Enter c: 8
 the equation can not be factored
 
 """
+import math
+
+
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+c = float(input("Enter c: "))
+
+disc = b ** 2 - 4 * a * c
+
+if disc < 0:
+    print("The discriminant is negative. The equation has no real solutions")
+else:
+    root = math.sqrt(disc)
+    if root.is_integer():
+        print("The equation has real solutions and can be factorised")
+    else:
+        print("The equation has real solutions but cannot be rationally factorised")

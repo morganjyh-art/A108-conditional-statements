@@ -23,3 +23,12 @@
  Enter password: password
  Access denied
 """
+username = input("Enter username: ")
+if username != "admin":
+    print("This is an invalid user")
+else:
+    pwd = input("Enter password: ")
+    if pwd == "12345password":
+        print("Access granted")
+    else:
+        print("Wrong password")

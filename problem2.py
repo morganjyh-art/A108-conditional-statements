@@ -10,3 +10,9 @@
 # Outputs:
 # "the number is an integer"
 # "the number is not an integer"
+text = input("Enter a number: ")
+try:
+    int(text)
+    print("It is an integer value")
+except ValueError:
+    print("It is not an integer value")

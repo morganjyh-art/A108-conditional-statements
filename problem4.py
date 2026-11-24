@@ -33,3 +33,20 @@ that is an obtuse triangle
 
 
 """
+a = float(input("Enter side 1: "))
+b = float(input("Enter side 2: "))
+c = float(input("Enter side 3: "))
+
+sides = sorted([a, b, c])
+x, y, z = sides
+calc = x ** 2 + y ** 2
+target = z ** 2
+
+if target == 0:
+    print("Side lengths cannot be zero")
+else:
+    percent_diff = abs(calc - target) / target
+    if percent_diff < 0.02:
+        print("These sides can form a right-angled triangle")
+    else:
+        print("These sides cannot form a right-angled triangle")
